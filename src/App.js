@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import ComponentC from "./components/ComponentC";
+import CounterTwo from "./components/CounterTwo";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -8,11 +8,7 @@ export const ChannelContext = React.createContext();
 function App() {
   return (
     <div className="App">
-      <UserContext.Provider value={"omgsrt"}>
-        <ChannelContext.Provider value={"sus"}>
-          <ComponentC />
-        </ChannelContext.Provider>
-      </UserContext.Provider>
+      <CounterTwo />
     </div>
   );
 }
