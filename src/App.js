@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import DataFetchingTwo from "./components/DataFetchingTwo";
+import Counter from "./components/Counter";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -23,7 +23,7 @@ const reducer = (state, action) => {
 function App() {
   return (
     <div className="App">
-      <DataFetchingTwo />
+      <Counter />
     </div>
   );
 }
