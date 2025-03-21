@@ -1,8 +1,6 @@
-import React, { useReducer } from "react";
+import React from "react";
 import "./App.css";
-import ComponentA from "./components/ComponentA";
-import ComponentB from "./components/ComponentB";
-import ComponentC from "./components/ComponentC";
+import DataFetchingTwo from "./components/DataFetchingTwo";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -23,16 +21,9 @@ const reducer = (state, action) => {
 };
 
 function App() {
-  const [count, dispatch] = useReducer(reducer, initialState);
-
   return (
     <div className="App">
-      <CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
-        Count - {count}
-        <ComponentA />
-        <ComponentB />
-        <ComponentC />
-      </CountContext.Provider>
+      <DataFetchingTwo />
     </div>
   );
 }
