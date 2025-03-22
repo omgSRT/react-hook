@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import HookTimer from "./components/HookTimer";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -23,7 +22,6 @@ const reducer = (state, action) => {
 function App() {
   return (
     <div className="App">
-      <HookTimer />
     </div>
   );
 }
